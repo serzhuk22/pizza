@@ -1,0 +1,32 @@
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+@import "_normalize";
+@import "_variables";
+@import "_components";
+//basic styles
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.375;
+  color: #1f1f1f;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.no-scroll {
+  overflow: hidden;
+}
+@import "_header-page";
+@import "_section-top";
+@import "_section-catalog";
+@import "_section-about";
+@import "_section-contacts";
+@import "_footer-page";
+@import "_popup.scss";

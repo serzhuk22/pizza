@@ -1,0 +1,129 @@
+.section-contacts {
+  overflow: hidden;
+  @media (max-width: $md3+px) {
+    padding-bottom: 0;
+  }
+  // .section-contacts__container
+
+  &__container {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      background: url(../img/section-contacts/tomatos.png) no-repeat;
+      background-size: cover;
+      width: 683px;
+      height: 397px;
+      bottom: -100px;
+      right: -350px;
+      @media (max-width: 1800px) {
+        right: -250px;
+      }
+      @media (max-width: 1600px) {
+        right: -150px;
+        bottom: -200px;
+      }
+      @media (max-width: 1400px) {
+        right: -100px;
+      }
+      @media (max-width: 1300px) {
+        right: -50px;
+      }
+      @media (max-width: 1200px) {
+        content: none;
+      }
+    }
+  }
+
+  // .section-contacts__title
+
+  &__title {
+    @media (max-width: $minwidth) {
+      margin-bottom: 0;
+    }
+  }
+}
+.contacts {
+  display: flex;
+  align-items: center;
+  position: relative;
+  @media (max-width: $md3+px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media (max-width: $minwidth) {
+    margin-bottom: 0;
+  }
+
+  // .contacts__start
+
+  &__start {
+    width: 50%;
+    @media (max-width: $md3+px) {
+      width: 100%;
+      order: 1;
+    }
+  }
+
+  // .contacts__map
+
+  &__map {
+    height: 450px;
+    background: #fef0b4;
+    @media (max-width: $md2+px) {
+      height: 350px;
+    }
+    @media (max-width: $md3+px) {
+      margin: 0 -20px;
+      height: 300px;
+    }
+  }
+
+  // .contacts__end
+
+  &__end {
+    width: 50%;
+    padding-left: 30px;
+    @media (max-width: $md3+px) {
+      width: 400px;
+      max-width: 100%;
+      margin-bottom: 40px;
+      padding-left: 0;
+    }
+  }
+
+  // .contacts__item
+
+  &__item {
+    margin-bottom: 35px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  // .contacts__title
+
+  &__title {
+    font-family: $ff1;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  // .contacts__text
+
+  &__text {
+    font-size: 18px;
+  }
+
+  // .contacts__phone
+
+  &__phone {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s;
+    &:hover {
+      color: #ffa650;
+    }
+  }
+}

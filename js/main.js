@@ -1,0 +1,1 @@
+var Cat=function(n){return n.speak=function(){return"meew"},n}((Cat=function(n){return n.eat=function(){return"om nom nom"},n}(Cat||{}))||{});console.log("hello");

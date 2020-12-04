@@ -1,0 +1,270 @@
+.btn {
+  font-family: "Montserrat";
+  border: none;
+  color: #fff;
+  width: 240px;
+  padding: 18px 20px;
+  max-width: 100%;
+  // height: 56px;
+  box-shadow: 0 0 38px rgba($color: #d44232, $alpha: 0.9);
+  border-radius: 28px;
+  background-color: #ff5441;
+  font-size: 18px;
+  cursor: pointer;
+  transition: opacity 0.3s, background-color 0.3s, transform 0.3s;
+  @media (max-width: $md4+px) {
+    width: 220px;
+    padding: 16px 28px;
+  }
+  &:hover {
+    background-color: #ff402b;
+  }
+  &:active {
+    opacity: 0.8;
+    transform: scale(0.95);
+  }
+  &:focus {
+    outline: none;
+  }
+}
+.container {
+  padding: 0 15px;
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  @media (max-width: 1250px) {
+    padding: 0 20px;
+  }
+}
+/* title start*/
+.page-title {
+  font-size: 48px;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Montserrat";
+  font-weight: 900;
+  margin-bottom: 30px;
+  &--accent {
+    color: #ffa650;
+  }
+  @media (max-width: 576px) {
+    font-size: 36px;
+  }
+}
+
+/* title end*/
+/* phone start*/
+
+.phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // .phone__item
+  &__item {
+    border: 3px solid #ffffff;
+    color: #fff;
+    border-radius: 27px;
+    padding: 7.5px 16px;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    transition: color 0.2s, background-color 0.2s, opacity 0.2s;
+    &:hover {
+      color: #000;
+      background-color: #fff;
+    }
+    &:active {
+      opacity: 0.8;
+    }
+    &--accent {
+      border-color: #ffa650;
+      color: #ffa650;
+    }
+    &--accent:hover {
+      background-color: #ffa650;
+      color: #fff;
+    }
+  }
+}
+/* phone end*/
+
+/* btn-menu start*/
+
+.btn-menu {
+  border: 0;
+  border-radius: 0;
+  margin-right: -10px;
+  background: none;
+  cursor: pointer;
+  padding: 10px;
+  display: inline-block;
+  // .btn-menu__box
+
+  &__box {
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+  }
+
+  // .btn-menu__inner
+
+  &__inner {
+    position: relative;
+    display: block;
+    top: 50%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 0;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 0;
+    }
+  }
+}
+
+/* /.btn-menu end*/
+.btn-menu__inner,
+.btn-menu__inner::before,
+.btn-menu__inner::after {
+  display: block;
+  background: #fff;
+  height: 4px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* section start*/
+.section {
+  padding: 110px 0;
+  @media (max-width: 576px) {
+    padding: 90px 0;
+  }
+}
+/* /section end*/
+
+/* socials start*/
+.socials {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  // .socials__item
+
+  &__item {
+    margin-right: 6px;
+    @media (max-width: $minwidth) {
+      margin-right: 15px;
+    }
+  }
+
+  // .socials__link
+
+  &__link {
+    display: inline-block;
+  }
+
+  // .socials__icon
+
+  &__icon {
+    fill: #ffa650;
+    width: 35px;
+    height: 35px;
+    transition: fill 0.2s, opacity 0.2s;
+    &:active {
+      opacity: 0.7;
+    }
+    @media (max-width: $minwidth) {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  // .socials__icon--vk
+
+  &__icon--vk {
+    &:hover {
+      fill: #4e7db2;
+    }
+  }
+
+  // .socials__logo
+
+  &__logo {
+    fill: #fff;
+  }
+
+  // .socials__icon--fb
+
+  &__icon--fb {
+    &:hover {
+      fill: #38529a;
+    }
+  }
+
+  // socials__icon--instagram
+
+  &__icon--instagram {
+    &:hover {
+      fill: #a52a9b;
+    }
+  }
+}
+/* socials end*/
+
+/* mobile-menu start*/
+.mobile-menu {
+  // .mobile-menu__nav
+
+  &__nav {
+  }
+
+  // .mobile-menu__ul
+
+  &__ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+  }
+
+  // .mobile-menu__li
+
+  &__li {
+  }
+
+  // .mobile-menu__link
+
+  &__link {
+    display: block;
+    font-family: $ff1;
+    font-size: 24px;
+    text-transform: capitalize;
+    color: inherit;
+    text-decoration: none;
+    padding: 20px 0;
+    transition: background 0.2s, color 0.2s, opacity 0.2s;
+    @media (max-width: $md3+px) {
+      font-size: 20px;
+    }
+    &:hover {
+      background: #ffa650;
+      color: #fff;
+    }
+    &:active {
+      opacity: 0.8;
+    }
+  }
+  // .mobile-menu__socials
+  &__socials {
+    display: flex;
+    justify-content: center;
+  }
+}
+/* mobile-menu end*/
