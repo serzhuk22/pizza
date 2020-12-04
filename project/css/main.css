@@ -1224,7 +1224,8 @@ img {
   .order__size {
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
-    color: #a2a2a2; }
+    color: #a2a2a2;
+    margin-bottom: 25px; }
 
 .form__input {
   display: block;

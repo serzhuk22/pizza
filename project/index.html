@@ -443,7 +443,7 @@
         </header>
         <div class="contacts">
           <div class="contacts__start">
-            <div class="contacts__map"></div>
+            <div class="contacts__map" id="ymap"></div>
           </div>
           <div class="contacts__end">
             <div class="contacts__item">
@@ -587,10 +587,10 @@
             <p class="popup__subtitle">Мы привезем вам горячую пиццу за 50 минут</p>
             <div class="order">
               <img  class="order__img" src="img/section-catalog/1.png" alt="">
-              <div class="order__title">
-                <span>Салями</span>
-                <span>850</span>&#8381;
-              </div>
+              <h3 class="order__title">
+                <span class="order-product-title">Салями</span>
+                <span class="order-product-price">850 &#8381;</span>
+              </h3>
               <div class="order__size">35 см</div>
               <form class="form">
                 <input type="hidden" name="pizza">
@@ -640,7 +640,7 @@
       </div>
     </div>
     <!-- /.popup-error -->
-
+    <script src="https://api-maps.yandex.ru/2.1/?lang=en_RU" type="text/javascript"></script> 
     <script src="js/main.js"></script>
   </body>
 </html>
